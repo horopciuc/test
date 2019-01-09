@@ -1,17 +1,17 @@
-var btn   = $('#Save');
-var input = $('#txtInput');
-var list 	  = document.getElementById('list');
+var btn   = document.getElementById('Save');
 
 function myFunction() {
-	var newElement = docmuent.createElement('LI');
-	list.appendChild(newElement);
-	newElement.innerHTML = input.val();
-	// var textnode = document.createTextNode(input.val());
-	// li.appendChild(textnode);
-	// document.getElementById("list").appendChild(li);
+	var text = document.getElementById('txtInput').value;
+	var ul = document.getElementById('ulist');
+	var li = document.createElement('li');
+	var button = document.createElement("button");
+	button.appendChild(document.createTextNode("Delete"));
+	button.className = "deleteButton";
+	li.appendChild(document.createTextNode(text));
+	li.appendChild(button);
+	ul.appendChild(li);
 }
 
-var rmv = document.getElementByClassName('btn');
-rmv.addEventListener('click', function() {
-	list.parentNode.removeChild(this);
-})
+$(document).on('click','.deleteButton', function() {
+    $(this).parent().remove();    
+});
