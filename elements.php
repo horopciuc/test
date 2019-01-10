@@ -5,13 +5,25 @@
 </head>
 <body>
 
-	<input type="text" id="txtInput" name="txtInput">
-	<button id="Save" onclick="myFunction()">Save</button>
+	<div style="float: left;">
 
-	<ul id="ulist">
+		<input type="text" id="txtInput" name="txtInput">
+		<button id="Save" >Save</button>
 
+		<ul id="ulist">
+		</ul>
 
-	</ul>
+	</div>
+
+	<div style="float: left; margin-left: 20px">
+
+		<input type="text" id="txtInput2" name="txtInput2">
+		<button id="Save2">Save</button>
+
+		<ul id="ulist2">
+		</ul>
+
+	</div>
 
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
