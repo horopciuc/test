@@ -6,16 +6,16 @@
 <body>
 
 	<div id=div1 style="float: left;">
-		<input type="text" id="txtInput" name="txtInput">
-		<button id="Save">Save</button>
-		<ul id="ulist">
+		<input type="text" id="txtInput-1" >
+		<button class="Save" data-id="1" >Save</button>
+		<ul id="ulist-1">
 		</ul>
 	</div>
 
 	<div id=div2 style="float: left; margin-left: 20px">
-		<input type="text" id="txtInput2" name="txtInput2">
-		<button id="Save2">Save</button>
-		<ul id="ulist2">
+		<input type="text" id="txtInput-2" >
+		<button class="Save" data-id="2">Save</button>
+		<ul id="ulist-2">
 		</ul>
 	</div>
 
