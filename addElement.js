@@ -1,35 +1,43 @@
 var Module =(function() {
 
-	var _btn    = $('#Save');
-	var _btn2   = $('#Save2');
-	var _input2 = $('#txtInput2');
-	var _input  = $('#txtInput');
+	// var _input2 = $('#txtInput2');
+	// var _input  = $('#txtInput');
 
 
-	var createElement = function() {
+	var 
+		createElement = function() {
+			
+			var _text = $input.val();
+			var _ul   = $ul;
+			var _str  = '<li>' + _text + '<button class="deleteButton">Delete</button> </li>';
+			_ul.append(_str);
+			console.log("in create element");
+		},
 
-		//posibil sa fie nevoie ca _input & _input2 sa fie aduse in functie
-		//var _text = _input.val();
-		var _text = _btn.val();
-		var _ul   = $('#ulist');
-		var _str  = '<li>' + _text + '<button class="deleteButton">Delete</button> </li>';
-		console.log("in create element");
-	};
+		addElement = function() {
 
-	var addElement = function() {
+			//replace _btn w/ $('$Save') ?
+			$btn1.on("click", createElement());
+			console.log("in add element");
+		},
 
-		//replace _btn w/ $('$Save') ?
-		_btn.on("click", createElement());
-		console.log("in add element");
-	};
+			// var addLiElement = function() {
+			// _ul.append(_str);
+			// }
 
-	// var addLiElement = function() {
-	// _ul.append(_str);
-	// }
+		init = function() {
+			   cacheDom();
+			   addElement();
+		},
 
-	var init = function() {
-		addElement();
-	};
+		cacheDom = function() {
+		this.$btn1   = $('#Save');
+		this.$btn2   = $('#Save2');
+		this.$el 	 = $('#div1');
+		this.$input  = this.$el.find('input');
+		this.$button = this.$el.find('button');
+		this.$ul 	 = this.$el.find('ul');
+	}
 
 	return {
 		init: init

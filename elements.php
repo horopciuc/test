@@ -5,17 +5,17 @@
 </head>
 <body>
 
-	<div style="float: left;">
+	<div id=div1 style="float: left;">
 
-		<input type="text" id="txtInput" name="txtInput">
-		<button id="Save" >Save</button>
+		<input type="text" id="txtInput" name="txtInput" value="faa">
+		<button id="Save">Save</button>
 
 		<ul id="ulist">
 		</ul>
 
 	</div>
 
-	<div style="float: left; margin-left: 20px">
+	<div id=div2 style="float: left; margin-left: 20px">
 
 		<input type="text" id="txtInput2" name="txtInput2">
 		<button id="Save2">Save</button>
