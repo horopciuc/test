@@ -5,7 +5,10 @@
 </head>
 <body>
 
-	<div id=div1 style="float: left;">
+	<input type="text" id="nmbInputs">
+	<button class="Save" id="createBtn">Generate</button>
+
+	<!-- <div id=div1 style="float: left;">
 		<input type="text" id="txtInput-1" >
 		<button class="Save" data-id="1" >Save</button>
 		<ul id="ulist-1">
@@ -17,7 +20,7 @@
 		<button class="Save" data-id="2">Save</button>
 		<ul id="ulist-2">
 		</ul>
-	</div>
+	</div> -->
 
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
